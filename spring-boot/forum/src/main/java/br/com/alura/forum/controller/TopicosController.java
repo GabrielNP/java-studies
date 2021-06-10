@@ -10,11 +10,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import br.com.alura.forum.modelo.Curso;
 import br.com.alura.forum.modelo.Topico;
 
-@Controller
+@RestController
 public class TopicosController {
 
     @RequestMapping("/topicos")
-    @ResponseBody
     public List<Topico> lista() {
         Topico topico = new Topico("Duvida", "Duvida com Stpring", new Curso("Spring", "Programacao"));
 
