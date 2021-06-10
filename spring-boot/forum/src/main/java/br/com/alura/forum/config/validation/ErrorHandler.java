@@ -28,8 +28,8 @@ public class ErrorHandler {
         
         List<FieldError> fieldErrors = exception.getBindingResult().getFieldErrors();
         fieldErrors.forEach(e -> {
-            String mensagem = messageSource.getMessage(e, LocaleContextHolder.getLocale());
-            FormErrorDto error = new FormErrorDto(e.getField(), mensagem);
+            String message = messageSource.getMessage(e, LocaleContextHolder.getLocale());
+            FormErrorDto error = new FormErrorDto(e.getField(), message);
             dto.add(error);
         });
 
