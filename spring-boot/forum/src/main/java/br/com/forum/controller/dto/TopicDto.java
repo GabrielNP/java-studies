@@ -1,8 +1,8 @@
 package br.com.forum.controller.dto;
 
 import java.time.LocalDateTime;
-import java.util.List;
-import java.util.stream.Collectors;
+
+import org.springframework.data.domain.Page;
 
 import br.com.forum.model.Topic;
 
@@ -35,7 +35,7 @@ public class TopicDto {
         return created_at;
     }
 
-    public static List<TopicDto> converter(List<Topic> topics) {
-        return topics.stream().map(TopicDto::new).collect(Collectors.toList());
+    public static Page<TopicDto> converter(Page<Topic> topics) {
+        return topics.map(TopicDto::new);
     }
 }
