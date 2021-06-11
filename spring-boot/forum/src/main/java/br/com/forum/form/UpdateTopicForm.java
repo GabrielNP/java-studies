@@ -1,10 +1,10 @@
-package br.com.alura.forum.form;
+package br.com.forum.form;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-import br.com.alura.forum.model.Topic;
-import br.com.alura.forum.repository.TopicRepository;
+import br.com.forum.model.Topic;
+import br.com.forum.repository.TopicRepository;
 
 public class UpdateTopicForm {
 

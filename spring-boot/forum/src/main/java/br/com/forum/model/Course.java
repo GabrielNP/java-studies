@@ -1,4 +1,4 @@
-package br.com.alura.forum.model;
+package br.com.forum.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,14 +6,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Course {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private String email;
-	private String password;
-
+	private String category;
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -30,7 +29,7 @@ public class User {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		User other = (User) obj;
+		Course other = (Course) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -55,20 +54,12 @@ public class User {
 		this.name = name;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getCategoria() {
+		return category;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
+	public void setCategoria(String category) {
+		this.category = category;
 	}
 
 }

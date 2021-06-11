@@ -1,8 +1,8 @@
-package br.com.alura.forum.controller.dto;
+package br.com.forum.controller.dto;
 
 import java.time.LocalDateTime;
 
-import br.com.alura.forum.model.Answer;
+import br.com.forum.model.Answer;
 
 public class AnswerDto {
     private Long id;

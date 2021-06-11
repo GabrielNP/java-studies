@@ -1,12 +1,12 @@
-package br.com.alura.forum.controller.dto;
+package br.com.forum.controller.dto;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import br.com.alura.forum.model.StatusTopic;
-import br.com.alura.forum.model.Topic;
+import br.com.forum.model.StatusTopic;
+import br.com.forum.model.Topic;
 
 public class TopicDeatilsDto {
     private Long id;

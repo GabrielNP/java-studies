@@ -1,4 +1,4 @@
-package br.com.alura.forum.controller.dto;
+package br.com.forum.controller.dto;
 
 public class FormErrorDto {
     private String field;

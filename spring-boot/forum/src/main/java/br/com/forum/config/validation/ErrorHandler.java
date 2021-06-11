@@ -1,4 +1,4 @@
-package br.com.alura.forum.config.validation;
+package br.com.forum.config.validation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import br.com.alura.forum.controller.dto.FormErrorDto;
+import br.com.forum.controller.dto.FormErrorDto;
 
 @RestControllerAdvice
 public class ErrorHandler {
