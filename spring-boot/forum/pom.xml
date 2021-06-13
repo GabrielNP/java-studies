@@ -25,6 +25,12 @@
 			<version>5.0.0</version>
 		</dependency>
 
+		<!-- WARNING: remind to set a cache provider before deploy it to production -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
